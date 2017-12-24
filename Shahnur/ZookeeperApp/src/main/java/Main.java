@@ -51,18 +51,24 @@ public class Main {
                             if (myArgs.length >= 2) {
                                 fileName = myArgs[1];
                                 client.createFile(rootPath + fileName);
+                            } else {
+                                System.out.println("Your command is not complete.");
                             }
                             break;
                         case 2:
                             if (myArgs.length >= 2) {
                                 fileName = myArgs[1];
                                 client.deleteFile(rootPath + fileName);
+                            } else {
+                                System.out.println("Your command is not complete.");
                             }
                             break;
                         case 3:
                             if (myArgs.length >= 2) {
                                 fileName = myArgs[1];
                                 client.readFile(rootPath + fileName);
+                            } else {
+                                System.out.println("Your command is not complete.");
                             }
                             break;
                         case 4:
@@ -76,6 +82,8 @@ public class Main {
                                     line.append(myArgs[i] + " ");
                                 }
                                 client.appendToFile(rootPath + fileName, line.toString().trim());
+                            } else {
+                                System.out.println("Your command is not complete.");
                             }
                             break;
                         case 5:
